@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/app-torq/torq/security/advisories/new
+    about: Please report security issues privately, not as public issues.
+  - name: Documentation
+    url: https://github.com/app-torq/torq/wiki
+    about: Installation, configuration, notifications and more.

@@ -1,0 +1,44 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to …
+        2. Click …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Shown under Settings → About, or the image tag you run.
+    validations:
+      required: true
+  - type: dropdown
+    id: setup
+    attributes:
+      label: How do you run it?
+      options:
+        - Docker / Docker Compose
+        - Built from source
+        - Public demo
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Container logs (`docker logs torq`) or browser console output. Remove anything private.
+      render: shell
